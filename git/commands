@@ -27,4 +27,6 @@ git branch #lists brancches, * -> currently you are in
 git branch new-branch # creates new branch
 git checkout new-branch
 git checkout -b new-branch #directly goes to the branch...creates it, if it is not there
+git checkout main #to comeback to main branch....some srcs refer it as master
+
 
