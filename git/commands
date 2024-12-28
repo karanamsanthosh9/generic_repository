@@ -1,0 +1,19 @@
+git init
+
+git status
+git status --short
+    ?? - untracked
+    A - added
+    M - modified after adding
+    D - deleted 
+
+git add <file>
+git add --all
+git add -A
+
+git commit -m "commit comment"
+git commit -a -m "direct commit without stage area"
+
+
+
+
