@@ -15,5 +15,9 @@ git commit -m "commit comment"
 git commit -a -m "direct commit without stage area"
 
 
+git log 
 
+git <command> -help
+git <command> --help , opens in vi like interface
+git help --all
 
