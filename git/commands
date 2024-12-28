@@ -29,4 +29,5 @@ git checkout new-branch
 git checkout -b new-branch #directly goes to the branch...creates it, if it is not there
 git checkout main #to comeback to main branch....some srcs refer it as master
 
+git branch -d branchNameToBeDeleted #-d for deleting
 
