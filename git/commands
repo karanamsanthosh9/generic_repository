@@ -31,3 +31,7 @@ git checkout main #to comeback to main branch....some srcs refer it as master
 
 git branch -d branchNameToBeDeleted #-d for deleting
 
+#before checkout, makesure you commit in current directory.
+
+git merge
+
