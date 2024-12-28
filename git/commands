@@ -22,5 +22,9 @@ git <command> --help , opens in vi like interface
 git help --all
 
 
-#branch
+#branches
+git branch #lists brancches, * -> currently you are in
+git branch new-branch # creates new branch
+git checkout new-branch
+git checkout -b new-branch #directly goes to the branch...creates it, if it is not there
 
