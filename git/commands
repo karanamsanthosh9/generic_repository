@@ -1,5 +1,9 @@
 git init
 
+
+git config --global user.name "karanam santhosh"
+git config --global user.email "karanamsanthosh18"
+
 git status
 git status --short
     ?? - untracked
@@ -20,6 +24,7 @@ git log
 git <command> -help
 git <command> --help , opens in vi like interface
 git help --all
+
 
 
 #branches
