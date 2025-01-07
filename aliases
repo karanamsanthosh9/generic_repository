@@ -3,19 +3,5 @@
 
 alias lk='clear && ls -lart'
 alias cdd='cd ..'
-
-function gitcommit {
-	read -p "Enter the file name to commit: " filename_to_commit
-		read -p "Enter the commit comments: " commit_comments
-		git commit ${filename_to_commit} -m "${commit_comments}" 
-		git push 
-}
-function gitcall {
-	echo 	"Committing all changes in the current directory"
-	read -p "Enter the commit comments: " commit_comments
-		git commit -a -m "${commit_comments}"
-		git push
-		
-}
-
+alias md='mkdir -p'
 
