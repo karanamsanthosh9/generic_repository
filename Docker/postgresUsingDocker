@@ -1,0 +1,26 @@
+
+docker ps -a
+
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysqlpassword -p 5431:5432 -d postgres
+--name some-postgres: Names the container some-postgres.
+-e POSTGRES_PASSWORD=mysqlpassword: Sets the PostgreSQL password to mysqlpassword.
+-p 5431:5432: Maps port 5431 on your host to port 5432 in the container.
+-d postgres: Runs the container in detached mode using the postgres image
+
+psql ->cmd  ....dt for tables
+
+docker exec -it some-postgres psql -U postgres
+docker exec -it some-postgres: Executes a command in the running some-postgres container.
+psql -U postgres: Connects to the PostgreSQL database using the psql client with the user postgres.
+
+if Reset (no backup)
+  docker stop some-postgres
+  docker rm some-postgres
+
+Lets try to create a reposs such that we can use it during start of db..like a db backup...
+
+
+docker volume create postgres-data
+
+docker run --name some-postgres -e POSTGRES_PASSWORD=password -p 5431:5432 -v postgres-data:/var/lib/postgresql/data -d postgres
+
