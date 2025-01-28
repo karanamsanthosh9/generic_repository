@@ -24,3 +24,9 @@ docker volume create postgres-data
 
 docker run --name some-postgres -e POSTGRES_PASSWORD=password -p 5431:5432 -v postgres-data:/var/lib/postgresql/data -d postgres
 
+docker volume create postgres-data: Creates a Docker volume named postgres-data.
+docker run --name some-postgres -e POSTGRES_PASSWORD=password -p 5431:5432 -v postgres-data:/var/lib/postgresql/data -d postgres: Runs a PostgreSQL container named some-postgres, sets the PostgreSQL password to password, maps port 5431 on your host to port 5432 in the container, and mounts the postgres-data volume to /var/lib/postgresql/data in the container.
+This setup ensures that your PostgreSQL data is stored in a Docker volume, which persists even if the container is removed.
+
+To inspect : docker volume inspect postgres-data
+deefault -> /var/lib/docker/volume/here
