@@ -21,7 +21,12 @@ Lets try to create a reposs such that we can use it during start of db..like a d
 
 
 docker volume create postgres-data
+{
+docker volume ls                =>list available volumes
+docker volume rm postgres-data  => remove a volume
+docker volume prune             => If you want to remove all unused volumes, you can use the following command:
 
+}
 docker run --name some-postgres -e POSTGRES_PASSWORD=password -p 5431:5432 -v postgres-data:/var/lib/postgresql/data -d postgres
 
 docker volume create postgres-data: Creates a Docker volume named postgres-data.
