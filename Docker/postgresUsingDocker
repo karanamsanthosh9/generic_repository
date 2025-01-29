@@ -13,6 +13,8 @@ docker exec -it some-postgres psql -U postgres
 docker exec -it some-postgres: Executes a command in the running some-postgres container.
 psql -U postgres: Connects to the PostgreSQL database using the psql client with the user postgres.
 
+SELECT current_database(); -> to print curret db name in psql
+
 if Reset (no backup)
   docker stop some-postgres
   docker rm some-postgres
