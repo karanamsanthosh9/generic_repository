@@ -86,9 +86,3 @@ This guide provides instructions on how to set up, run, and manage a PostgreSQL 
 - **Verify the Backup:**
   - Always verify the backup file by extracting it and checking its contents before relying on it.
 
-## Need Help?
-
-Feel free to reach out if you need further clarification or assistance! 😊
-```
-
-This format will make it easy for others to follow and understand the steps you've outlined. If there's anything else you'd like to add or modify, let me know!
