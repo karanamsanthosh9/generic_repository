@@ -50,4 +50,13 @@ Sure! Here are some basic PowerShell commands to get you started:
     Remove-Item <path>
     ```
 
+11. **`Remove-Item`**: Deletes a file or directory.
+    ```powershell
+    Start-Process "<exe name>"
+    Start-Process "notepad++.exe"
+    ```
+    
+To start an application like Notepad++, you should use the Start-Process command in PowerShell:
+
+
 These commands are just the tip of the iceberg. PowerShell is a very powerful and versatile tool, and there's a lot more you can do with it. If you have any specific tasks in mind or need more detailed examples, feel free to ask!
