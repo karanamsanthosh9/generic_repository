@@ -50,7 +50,7 @@ Sure! Here are some basic PowerShell commands to get you started:
     Remove-Item <path>
     ```
 
-11. **`Remove-Item`**: Deletes a file or directory.
+11. **`Start-Process`**: Deletes a file or directory.
     ```powershell
     Start-Process "<exe name>"
     Start-Process "notepad++.exe"
