@@ -62,9 +62,7 @@ Here's a handy cheat sheet for some of the most commonly used Maven commands:
 - **Skip Test Compilation**: `-Dmaven.test.skip=true`
   - Skips compiling and running the tests.
 
-### Maven spring-boot 
-- Sure! Here are some detailed commands for using Maven with Spring Boot:
-
+### Maven spring-boot :
 ### Running the Application
 - **Run the application**: `mvn spring-boot:run`
   - This command runs your Spring Boot application.
