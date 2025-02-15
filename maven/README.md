@@ -1,12 +1,12 @@
-mvn archetype:generate
+mvn archetype:generate   
     .mvn
-    src/main/java/com/example
-    pom.xml
-mvn compile  (creates a target dir in project/)
-mvn test
-mvn package (to create package i.e tar) ->creates jar in project/target
+    src/main/java/com/example   
+    pom.xml   
+mvn compile  (creates a target dir in project/)    
+mvn test   
+mvn package (to create package i.e tar) ->creates jar in project/target   
 mvn install (to store generated tar in local repo(~/.m2))  \
-            C:\Users\san.k\.m2\repository\jdbcApp\database-ops\1.0-SNAPSHOT\database-ops-1.0-SNAPSHOT.jar
+             C:\Users\san.k\.m2\repository\jdbcApp\database-ops\1.0-SNAPSHOT\database-ops-1.0-SNAPSHOT.jar
 
 
 
