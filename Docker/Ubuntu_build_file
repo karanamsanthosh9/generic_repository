@@ -1,0 +1,17 @@
+FROM ubuntu:latest
+
+
+
+RUN echo "starting...."
+RUN apt-get update
+RUN apt-get install ssh
+RUN apt-get install git
+RUN apt-get install curl
+RUN apt-get install cmake
+RUN apt-get install python3
+RUN apt-get install python3-pip
+RUn apt-get clear
+
+WORKDIR /workspace
+
+CMD ["/bin/bash"]
