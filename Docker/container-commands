@@ -1,0 +1,5 @@
+docker login -u karanamsanthosh9
+
+docker run -d -p 8080:8080 -e PASSWORD="123123" karanamsanthosh9/custom-vs-code
+
+cd
