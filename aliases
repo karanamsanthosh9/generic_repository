@@ -5,3 +5,5 @@ alias lk='clear && ls -lart'
 alias cdd='cd ..'
 alias md='mkdir -p'
 
+
+echo end
