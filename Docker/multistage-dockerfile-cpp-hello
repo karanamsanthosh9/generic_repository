@@ -1,0 +1,18 @@
+FROM ubuntu:latest AS builder
+
+WOKRDIR /builder
+
+RUN apt-get update && \
+    apt-get install -y g++
+
+COPY main.cpp .
+
+RUN g++ main.cpp -o a.out
+
+FROM ubuntu:latest
+
+WORKDIR /app
+
+COPY --from=builder /build/a.out .
+
+CMD ["./a.out"]
