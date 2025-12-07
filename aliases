@@ -5,8 +5,18 @@ alias lk='clear && ls -lart'
 alias cdd='cd ..'
 alias md='mkdir -p'
 alias h='history'
-alias kga='kubectl get all'
+#alias kga='kubectl get all'
 alias kda='kubectl delete all --all'
+
+function kgaa
+{
+ array_list=("pods" "rs" "svc" "deployments");
+ for object in ${array_list[@]}
+ do 
+    echo "<----------------kubectl get ${object}---------------->"
+    kubectl get ${object}
+done
+}
 
 
 echo end
