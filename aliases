@@ -4,6 +4,9 @@
 alias lk='clear && ls -lart'
 alias cdd='cd ..'
 alias md='mkdir -p'
+alias h='history'
+alias kga='kubectl get all'
+alias kda='kubectl delete all --all'
 
 
 echo end

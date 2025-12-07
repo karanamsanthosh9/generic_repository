@@ -1,0 +1,9 @@
+apiVersion: apps/v1
+kind: pod
+metadata:
+  name: my_name_for_pod
+  label:
+
+spec:
+  image: nginx
+  replicas: 3
