@@ -8,9 +8,9 @@ alias h='history'
 #alias kga='kubectl get all'
 alias kda='kubectl delete all --all'
 
-function kgaa
+function kga
 {
- array_list=("pods" "rs" "svc" "deployments");
+ array_list=("nodes" "pods" "rs" "svc" "deployments");
  for object in ${array_list[@]}
  do 
     echo "<----------------kubectl get ${object}---------------->"
@@ -19,4 +19,4 @@ done
 }
 
 
-echo end
+echo Aliases set......
