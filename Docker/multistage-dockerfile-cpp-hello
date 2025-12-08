@@ -1,6 +1,6 @@
 FROM ubuntu:latest AS builder
 
-WOKRDIR /builder
+WORKDIR /builder
 
 RUN apt-get update && \
     apt-get install -y g++
@@ -13,6 +13,6 @@ FROM ubuntu:latest
 
 WORKDIR /app
 
-COPY --from=builder /build/a.out .
+COPY --from=builder /builder/a.out .
 
 CMD ["./a.out"]
